@@ -1,0 +1,25 @@
+<%@page language = "java" %>
+<%@page import= "java.sql.*" %>
+<%
+   
+   String fn=request.getParameter("fname");
+   String ln=request.getParameter("lname");
+   String um=request.getParameter("usermail");
+   String no=request.getParameter("phonenumber");
+String de=request.getParameter("Description");
+   Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+   Connection con=DriverManager.getConnection("jdbc:odbc:dbemp");
+
+    
+    PreparedStatement ps = con.prepareStatement("Insert into info values(?,?,?,?,?)"); 
+   
+   ps.setString(1,fn);
+   ps.setString(2,ln);
+   ps.setString(3,um);
+   ps.setString(4,no); 
+   ps.setString(5,de);
+   ps.executeUpdate();
+   
+   out.println("Record Added Successfully!");
+   
+   %>

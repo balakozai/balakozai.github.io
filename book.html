@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Saira|Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Expletus+Sans:600" rel="stylesheet">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+.thank .back {
+	position: absolute;
+    z-index: -1;
+    top : 0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0.4;
+    width:100%;
+    background: url(PICS/mount.jpg) center center;
+    background-size: cover;
+	height : 100%;
+}
+
+.thank {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 42px;
+    font-family: saira;
+    color: black;
+    width : 100%;
+    height: 100%;
+    
+}
+
+@keyframes example {
+	0% {left:0px; top:0px;}
+	25% {left:200px; top:0px;}
+	50% {left:200px; top:200px;}
+	75% {left:0px; top:200px;}
+	100% {left:0px; top:0px}
+} 
+
+#carimage {
+	width:100px;
+} 
+
+#checkimage {
+	width:50px;
+}
+
+#footer {	
+    width:100%;
+    background-color: black;
+    text-align:center;
+    bottom: 0px;
+    position: fixed;
+
+}
+
+#foot1 {
+	color:white;
+	font-family:arial;
+	font-size:14px;
+	margin:auto;
+	font-style:italic;
+
+}
+
+#bookhome {
+	font-family: saira;
+	font-size: 28px;
+	color:black;
+
+}
+
+body {
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+	overflow:hidden;
+}
+.anim {
+	display: inline-block;
+	overflow:hidden;
+ 	white-space:nowrap;
+}
+
+.anim:first-of-type {    
+  animation: showup 10s infinite;
+}
+
+.anim:last-of-type {
+  width:100%;
+  animation: reveal 10s infinite;
+}
+
+.anim:last-of-type span {
+  margin-left:;
+  animation: slidein 10s infinte;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:50%; }
+    20% { margin-left:50%; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:100%;}
+    80% {opacity:1;}
+    100% {opacity:0;width:100%;}
+}
+
+</style>
+</head> 
+
+<body>
+<div class="thank">
+	<div class="back"></div>
+		<br><br><br><br>
+		<div class="anim">
+			Thank You <span>For Booking With Us</span><br>
+			<img id="carimage" src="PICS\car.png"><br>
+			<img id="checkimage" src="PICS\check.png">
+		</div>
+			<br>
+			<a id="bookhome" href="index.html"><b>HOME</b></a>	
+	</div>
+</div>
+
+<div id="footer">      
+	<p id="foot1" align="center">Sitemap | Copyrights Reserved. World of Cars India Pvt Ltd 2017 | Disclaimer | Webpage Designed By Dhrumil Shah</p>
+</div>
+</body>
+<html>

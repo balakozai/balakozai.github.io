@@ -1,0 +1,25 @@
+REDIRECT redirecting_adrotator.asp
+WIDTH 200
+HEIGHT 300
+BORDER 1
+*
+
+a.jpg
+http://www.google.com
+Company a
+15
+
+b.jpg
+http://www.google.com
+Company a
+15
+
+c.jpg
+http://www.google.com
+Company a
+15
+
+d.jpg
+http://www.google.com
+Company a
+15
